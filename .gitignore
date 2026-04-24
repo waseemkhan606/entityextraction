@@ -1,9 +1,24 @@
-# Ignore the actual database data
+# Neo4j data volume
 neo4j_data/
 
-# Ignore Python environment and caches
+# Environment variables — never commit secrets
+.env
+
+# Python environment and caches
 .venv/
 venv/
 __pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# IDE
 .idea/
+.vscode/
+
+# Jupyter
 .ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
